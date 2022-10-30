@@ -17,7 +17,7 @@
 		496A102F290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A102E290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift */; };
 		496A1031290D31790012C4E3 /* TabManView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1030290D31790012C4E3 /* TabManView.swift */; };
 		496A1033290D35FD0012C4E3 /* ReusableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1032290D35FD0012C4E3 /* ReusableCollectionViewCell.swift */; };
-		496A1035290D48DE0012C4E3 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1034290D48DE0012C4E3 /* MainModel.swift */; };
+		496A1035290D48DE0012C4E3 /* DKSplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1034290D48DE0012C4E3 /* DKSplashModel.swift */; };
 		496A103B290D503A0012C4E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 496A103A290D503A0012C4E3 /* Kingfisher */; };
 		496A1045290E44050012C4E3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 496A1044290E44050012C4E3 /* .gitignore */; };
 		4973932A290B9F6C0070F946 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49739329290B9F6C0070F946 /* BaseViewController.swift */; };
@@ -65,7 +65,7 @@
 		496A102E290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturesPatternsViewModel.swift; sourceTree = "<group>"; };
 		496A1030290D31790012C4E3 /* TabManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManView.swift; sourceTree = "<group>"; };
 		496A1032290D35FD0012C4E3 /* ReusableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCollectionViewCell.swift; sourceTree = "<group>"; };
-		496A1034290D48DE0012C4E3 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		496A1034290D48DE0012C4E3 /* DKSplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKSplashModel.swift; sourceTree = "<group>"; };
 		496A1044290E44050012C4E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		49739329290B9F6C0070F946 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4973932B290B9FC30070F946 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -344,7 +344,7 @@
 		49C14CEC290AF60800444F5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				496A1034290D48DE0012C4E3 /* MainModel.swift */,
+				496A1034290D48DE0012C4E3 /* DKSplashModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				496A102B290D2C930012C4E3 /* WallpapersViewModel.swift in Sources */,
 				496A1033290D35FD0012C4E3 /* ReusableCollectionViewCell.swift in Sources */,
 				49739331290BA05F0070F946 /* BaseCollectionViewCell.swift in Sources */,
-				496A1035290D48DE0012C4E3 /* MainModel.swift in Sources */,
+				496A1035290D48DE0012C4E3 /* DKSplashModel.swift in Sources */,
 				49739348290BAB900070F946 /* SearchViewController.swift in Sources */,
 				49739351290BCC140070F946 /* UIViewController+.swift in Sources */,
 				4973935E290BF8670070F946 /* CurrentEventsViewController.swift in Sources */,
