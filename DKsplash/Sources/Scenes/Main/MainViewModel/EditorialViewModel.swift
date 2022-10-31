@@ -22,7 +22,7 @@ final class EditorialViewModel: MainVMProtocol {
             // += 으로 해주어야 계속 데이터가 추가가됨!!! = (X)
             self.mainModelList.value += json["results"].arrayValue.map {
                 MainModel(
-                    imageURL: URL(string: $0["urls"]["small"].stringValue)!,
+                    imageURL: URL(string: $0["urls"]["regular"].stringValue)!,
                     writer: $0["user"]["name"].stringValue
                 )
             }

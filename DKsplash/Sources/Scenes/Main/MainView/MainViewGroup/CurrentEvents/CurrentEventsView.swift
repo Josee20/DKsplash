@@ -9,20 +9,26 @@ import UIKit
 
 final class CurrentEventsView: BaseView {
     
-    let test: UILabel = {
-        let view = UILabel()
-        view.text = "DK3"
+    public let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let width = UIScreen.main.bounds.width
+        let height = width
+
+        layout.itemSize = CGSize(width: width, height: width)
+        layout.scrollDirection = .vertical
+
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         return view
     }()
     
     override func configureUI() {
-        self.addSubview(test)
+        self.addSubview(collectionView)
     }
     
     override func setConstraints() {
-        test.snp.makeConstraints {
-            $0.width.height.equalTo(40)
-            $0.center.equalTo(self)
+        collectionView.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide)
+            $0.leading.trailing.bottom.equalToSuperview()
         }
     }
 }

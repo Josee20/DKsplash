@@ -22,6 +22,7 @@ class ReusableCollectionViewCell: BaseCollectionViewCell {
     }()
     
     override func configureUI() {
+        
         [photoImageView, nameLabel].forEach { self.addSubview($0) }
     }
     

@@ -53,6 +53,7 @@
 		49C14CD6290AF01D00444F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C14CD5290AF01D00444F5E /* SceneDelegate.swift */; };
 		49C14CDD290AF01F00444F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C14CDC290AF01F00444F5E /* Assets.xcassets */; };
 		49C14CE0290AF01F00444F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C14CDE290AF01F00444F5E /* LaunchScreen.storyboard */; };
+		49DD5A95290FC14700B7902D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DD5A94290FC14700B7902D /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		49C14CDC290AF01F00444F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C14CDF290AF01F00444F5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C14CE1290AF01F00444F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49DD5A94290FC14700B7902D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +396,7 @@
 		49C14CF2290AF6E400444F5E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				49DD5A94290FC14700B7902D /* TabBarController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				4973935C290BF8590070F946 /* FoodDrinkView.swift in Sources */,
 				49739358290BF8380070F946 /* EditorialView.swift in Sources */,
 				49739366290BF8AE0070F946 /* RendersViewController.swift in Sources */,
+				49DD5A95290FC14700B7902D /* TabBarController.swift in Sources */,
 				49C14CD6290AF01D00444F5E /* SceneDelegate.swift in Sources */,
 				4973936E290C0A1A0070F946 /* APIKey.swift in Sources */,
 				49739333290BA06F0070F946 /* BaseTableViewCell.swift in Sources */,

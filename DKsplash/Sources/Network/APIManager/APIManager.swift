@@ -25,7 +25,13 @@ class APIManager {
                 let json = JSON(value)
 //                print("JSON: \(json)")
                 
-                completion(json)
+                let statusCode = response.response?.statusCode ?? 400
+                
+                if statusCode == 200 {
+                    completion(json)
+                } else {
+                    print("에러발생")
+                }
                 
             case .failure(let error):
                 print(error)

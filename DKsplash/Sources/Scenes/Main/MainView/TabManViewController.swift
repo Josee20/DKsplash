@@ -28,8 +28,8 @@ final class TabManViewController: TabmanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        self.navigationItem.title = "Unsplash"
+        
+        self.navigationItem.title = "DKSplash"
         
         self.dataSource = self
         

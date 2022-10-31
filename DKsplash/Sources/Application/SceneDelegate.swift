@@ -16,11 +16,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        let vc = TabManViewController()
-        let nav = UINavigationController(rootViewController: vc)
+        let vc = TabBarController()
+//        let nav = UINavigationController(rootViewController: vc)
         
         window?.backgroundColor = .systemBackground
-        window?.rootViewController = nav
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
 

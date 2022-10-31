@@ -8,8 +8,8 @@
 import UIKit
 
 final class EditorialView: BaseView {
-    
-    let collectionView: UICollectionView = {
+
+    public let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let width = UIScreen.main.bounds.width
         let height = width
