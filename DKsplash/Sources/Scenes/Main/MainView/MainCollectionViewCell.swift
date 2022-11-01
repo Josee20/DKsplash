@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ReusableCollectionViewCell: BaseCollectionViewCell {
+class MainCollectionViewCell: BaseCollectionViewCell {
     
     let nameLabel: UILabel = {
         let view = UILabel()

@@ -16,7 +16,7 @@
 		496A102D290D2C9B0012C4E3 /* RendersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A102C290D2C9B0012C4E3 /* RendersViewModel.swift */; };
 		496A102F290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A102E290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift */; };
 		496A1031290D31790012C4E3 /* TabManView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1030290D31790012C4E3 /* TabManView.swift */; };
-		496A1033290D35FD0012C4E3 /* ReusableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1032290D35FD0012C4E3 /* ReusableCollectionViewCell.swift */; };
+		496A1033290D35FD0012C4E3 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1032290D35FD0012C4E3 /* MainCollectionViewCell.swift */; };
 		496A1035290D48DE0012C4E3 /* DKSplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A1034290D48DE0012C4E3 /* DKSplashModel.swift */; };
 		496A103B290D503A0012C4E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 496A103A290D503A0012C4E3 /* Kingfisher */; };
 		496A1045290E44050012C4E3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 496A1044290E44050012C4E3 /* .gitignore */; };
@@ -49,6 +49,9 @@
 		4973936C290BF8D80070F946 /* TexturesPatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973936B290BF8D80070F946 /* TexturesPatternsView.swift */; };
 		4973936E290C0A1A0070F946 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973936D290C0A1A0070F946 /* APIKey.swift */; };
 		49739370290C0AA90070F946 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973936F290C0AA90070F946 /* EndPoint.swift */; };
+		4986723F290FEF9600F74C7F /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986723E290FEF9600F74C7F /* SearchCollectionViewCell.swift */; };
+		49867241290FEFA000F74C7F /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49867240290FEFA000F74C7F /* CategoryTableViewCell.swift */; };
+		498672462910E82300F74C7F /* RandomPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498672452910E82300F74C7F /* RandomPhotoTableViewCell.swift */; };
 		49C14CD4290AF01D00444F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C14CD3290AF01D00444F5E /* AppDelegate.swift */; };
 		49C14CD6290AF01D00444F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C14CD5290AF01D00444F5E /* SceneDelegate.swift */; };
 		49C14CDD290AF01F00444F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C14CDC290AF01F00444F5E /* Assets.xcassets */; };
@@ -65,7 +68,7 @@
 		496A102C290D2C9B0012C4E3 /* RendersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendersViewModel.swift; sourceTree = "<group>"; };
 		496A102E290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturesPatternsViewModel.swift; sourceTree = "<group>"; };
 		496A1030290D31790012C4E3 /* TabManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManView.swift; sourceTree = "<group>"; };
-		496A1032290D35FD0012C4E3 /* ReusableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCollectionViewCell.swift; sourceTree = "<group>"; };
+		496A1032290D35FD0012C4E3 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		496A1034290D48DE0012C4E3 /* DKSplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKSplashModel.swift; sourceTree = "<group>"; };
 		496A1044290E44050012C4E3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		49739329290B9F6C0070F946 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +97,9 @@
 		4973936B290BF8D80070F946 /* TexturesPatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TexturesPatternsView.swift; sourceTree = "<group>"; };
 		4973936D290C0A1A0070F946 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		4973936F290C0AA90070F946 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		4986723E290FEF9600F74C7F /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		49867240290FEFA000F74C7F /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		498672452910E82300F74C7F /* RandomPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhotoTableViewCell.swift; sourceTree = "<group>"; };
 		49C14CD0290AF01D00444F5E /* DKsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C14CD3290AF01D00444F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49C14CD5290AF01D00444F5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,7 +214,7 @@
 				4973933C290BAAF00070F946 /* TabManViewController.swift */,
 				496A1030290D31790012C4E3 /* TabManView.swift */,
 				496A103C290E3EF90012C4E3 /* MainViewGroup */,
-				496A1032290D35FD0012C4E3 /* ReusableCollectionViewCell.swift */,
+				496A1032290D35FD0012C4E3 /* MainCollectionViewCell.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -247,8 +253,11 @@
 		49739342290BAB370070F946 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
-				49739347290BAB900070F946 /* SearchViewController.swift */,
 				49739349290BAB970070F946 /* SearchView.swift */,
+				49739347290BAB900070F946 /* SearchViewController.swift */,
+				49867240290FEFA000F74C7F /* CategoryTableViewCell.swift */,
+				498672452910E82300F74C7F /* RandomPhotoTableViewCell.swift */,
+				4986723E290FEF9600F74C7F /* SearchCollectionViewCell.swift */,
 			);
 			path = SearchView;
 			sourceTree = "<group>";
@@ -506,7 +515,7 @@
 				4973936C290BF8D80070F946 /* TexturesPatternsView.swift in Sources */,
 				4973936A290BF8CD0070F946 /* TexturesPatternsViewController.swift in Sources */,
 				496A102B290D2C930012C4E3 /* WallpapersViewModel.swift in Sources */,
-				496A1033290D35FD0012C4E3 /* ReusableCollectionViewCell.swift in Sources */,
+				496A1033290D35FD0012C4E3 /* MainCollectionViewCell.swift in Sources */,
 				49739331290BA05F0070F946 /* BaseCollectionViewCell.swift in Sources */,
 				496A1035290D48DE0012C4E3 /* DKSplashModel.swift in Sources */,
 				49739348290BAB900070F946 /* SearchViewController.swift in Sources */,
@@ -516,12 +525,14 @@
 				496A1031290D31790012C4E3 /* TabManView.swift in Sources */,
 				4973935A290BF8510070F946 /* FoodDrinkViewController.swift in Sources */,
 				49739362290BF8960070F946 /* WallpapersViewController.swift in Sources */,
+				4986723F290FEF9600F74C7F /* SearchCollectionViewCell.swift in Sources */,
 				49739368290BF8B70070F946 /* RendersView.swift in Sources */,
 				49739370290C0AA90070F946 /* EndPoint.swift in Sources */,
 				49C14CD4290AF01D00444F5E /* AppDelegate.swift in Sources */,
 				4973934A290BAB970070F946 /* SearchView.swift in Sources */,
 				4973934C290BABA10070F946 /* SearchViewModel.swift in Sources */,
 				4973932A290B9F6C0070F946 /* BaseViewController.swift in Sources */,
+				49867241290FEFA000F74C7F /* CategoryTableViewCell.swift in Sources */,
 				49739339290BA9690070F946 /* Observable.swift in Sources */,
 				496A102F290D2CAF0012C4E3 /* TexturesPatternsViewModel.swift in Sources */,
 				4973934F290BB1AC0070F946 /* ReusableProtocol.swift in Sources */,
@@ -541,6 +552,7 @@
 				4973933D290BAAF00070F946 /* TabManViewController.swift in Sources */,
 				496A1029290D2C880012C4E3 /* CurrentEventsViewModel.swift in Sources */,
 				496A1027290D2C7E0012C4E3 /* FoodDrinkViewModel.swift in Sources */,
+				498672462910E82300F74C7F /* RandomPhotoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

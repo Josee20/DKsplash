@@ -27,7 +27,7 @@ final class RendersViewController: BaseViewController {
     }
     
     override func configure() {
-        mainView.collectionView.register(ReusableCollectionViewCell.self, forCellWithReuseIdentifier: ReusableCollectionViewCell.reuseIdentifier)
+        mainView.collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.reuseIdentifier)
         mainView.collectionView.delegate = self
         mainView.collectionView.dataSource = self
         mainView.collectionView.prefetchDataSource = self
@@ -42,7 +42,7 @@ extension RendersViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReusableCollectionViewCell.reuseIdentifier, for: indexPath) as? ReusableCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCollectionViewCell.reuseIdentifier, for: indexPath) as? MainCollectionViewCell else { return UICollectionViewCell() }
         
         cell.photoImageView.kf.setImage(with: viewModel.mainModelList.value[indexPath.item].imageURL)
         cell.nameLabel.text = viewModel.mainModelList.value[indexPath.item].writer

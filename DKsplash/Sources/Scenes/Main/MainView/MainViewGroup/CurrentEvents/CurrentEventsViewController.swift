@@ -21,15 +21,13 @@ final class CurrentEventsViewController: BaseViewController {
         
         viewModel.mainModelList.bind { _ in
             self.mainView.collectionView.reloadData()
-            print("++++++++++++++\(self.viewModel.totalPages.value)")
-            print("==============\(self.viewModel.currentPage.value)")
         }
         
         viewModel.showPhotos()
     }
     
     override func configure() {
-        mainView.collectionView.register(ReusableCollectionViewCell.self, forCellWithReuseIdentifier: ReusableCollectionViewCell.reuseIdentifier)
+        mainView.collectionView.register(MainCollectionViewCell.self, forCellWithReuseIdentifier: MainCollectionViewCell.reuseIdentifier)
         mainView.collectionView.delegate = self
         mainView.collectionView.dataSource = self
         mainView.collectionView.prefetchDataSource = self
@@ -43,7 +41,7 @@ extension CurrentEventsViewController: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReusableCollectionViewCell.reuseIdentifier, for: indexPath) as? ReusableCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MainCollectionViewCell.reuseIdentifier, for: indexPath) as? MainCollectionViewCell else { return UICollectionViewCell() }
         
         cell.photoImageView.kf.setImage(with: viewModel.mainModelList.value[indexPath.item].imageURL)
         cell.nameLabel.text = viewModel.mainModelList.value[indexPath.item].writer
