@@ -25,7 +25,6 @@ final class SearchView: BaseView {
     public let tableView: UITableView = {
         let view = UITableView()
         view.backgroundColor = .systemBackground
-//        view.isScrollEnabled = false
         return view
     }()
     

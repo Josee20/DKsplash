@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class SearchViewController: BaseViewController {
     
     private let mainView = SearchView()
+    private let viewModel = SearchViewModel()
+    private let disposeBag = DisposeBag()
     
     override func loadView() {
         self.view = mainView
@@ -19,6 +23,10 @@ final class SearchViewController: BaseViewController {
         super.viewDidLoad()
         
         setSearchController()
+        viewModel.showPhotos()
+        
+        
+        
     }
     
     override func configure() {
@@ -48,7 +56,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.section == 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.reuseIdentifier, for: indexPath) as? CategoryTableViewCell else { return UITableViewCell() }
-            
+                
             return cell
         } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RandomPhotoTableViewCell.reuseIdentifier, for: indexPath) as? RandomPhotoTableViewCell else { return UITableViewCell() }
@@ -63,7 +71,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return UIScreen.main.bounds.height / 4
+            return UIScreen.main.bounds.height / 3.8
         } else {
             return UIScreen.main.bounds.height * 3
         }
@@ -71,9 +79,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "ABCD"
+            return Header.cateogry.requestHeader
         } else {
-            return "EFGH"
+            return Header.random.requestHeader
         }
     }
 }

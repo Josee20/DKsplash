@@ -9,13 +9,13 @@ import Foundation
 
 final class EditorialViewModel: MainVMProtocol {
     
-    public var mainModelList: Observable<[MainModel]> = Observable(value: [])
-    internal var photoTitle: Observable<String> = Observable(value: "Editorial") // 상수는 프로토콜 채택 불가함
-    public var currentPage: Observable<Int> = Observable(value: 1)
-    public var totalPages: Observable<Int> = Observable(value: 0)
+    public var mainModelList: MObservable<[MainModel]> = MObservable(value: [])
+    internal var photoTitle: MObservable<String> = MObservable(value: "Editorial") // 상수는 프로토콜 채택 불가함
+    public var currentPage: MObservable<Int> = MObservable(value: 1)
+    public var totalPages: MObservable<Int> = MObservable(value: 0)
     
     public func showPhotos() {
-        APIManager.shared.requestPhtosData(type: .searchPhotos, title: photoTitle.value, page: currentPage.value) { json in
+        APIManager.shared.requestSearchPhtosData(type: .searchPhotos, title: photoTitle.value, page: currentPage.value) { json in
             
             self.totalPages.value = json["total_pages"].intValue
             

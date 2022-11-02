@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Observable<T> {
+class MObservable<T> {
     
     var listener: ( (T) -> Void )?
     

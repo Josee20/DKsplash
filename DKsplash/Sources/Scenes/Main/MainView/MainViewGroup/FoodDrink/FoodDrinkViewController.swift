@@ -24,7 +24,6 @@ final class FoodDrinkViewController: BaseViewController {
         })
         
         viewModel.showPhotos()
-        
     }
     
     override func configure() {

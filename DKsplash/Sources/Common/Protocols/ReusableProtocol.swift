@@ -12,10 +12,10 @@ protocol ReusableProtocol: AnyObject {
 }
 
 protocol MainVMProtocol {
-    var mainModelList: Observable<[MainModel]> { get }
-    var photoTitle: Observable<String> { get }
-    var currentPage: Observable<Int> { get }
-    var totalPages: Observable<Int> { get }
+    var mainModelList: MObservable<[MainModel]> { get }
+    var photoTitle: MObservable<String> { get }
+    var currentPage: MObservable<Int> { get }
+    var totalPages: MObservable<Int> { get }
     
     func showPhotos()
 }

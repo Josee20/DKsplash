@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class CategoryTableViewCell: BaseTableViewCell {
     
+    let viewModel = SearchViewModel()
+    let disposeBag = DisposeBag()
+
     private let categoryCollectionViewFlowLayout: UICollectionViewFlowLayout = { (scroll: UICollectionView.ScrollDirection , divider: CGFloat) in
         let layout = UICollectionViewFlowLayout()
         let space: CGFloat = 8
@@ -26,7 +31,6 @@ class CategoryTableViewCell: BaseTableViewCell {
     lazy var categoryCollectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: self.categoryCollectionViewFlowLayout)
         view.isScrollEnabled = true
-        view.backgroundColor = .systemPink
         view.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: SearchCollectionViewCell.reuseIdentifier)
         view.showsHorizontalScrollIndicator = false
         return view
@@ -52,12 +56,20 @@ class CategoryTableViewCell: BaseTableViewCell {
 extension CategoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 14
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.reuseIdentifier, for: indexPath) as? SearchCollectionViewCell else { return UICollectionViewCell() }
              
+        let behaviorSubject = BehaviorSubject(value: viewModel.categoryList)
+        
+        behaviorSubject
+            .map { $0[indexPath.item].description }
+            .bind(to: cell.categoryLabel.rx.text)
+            .disposed(by: disposeBag)
+
         return cell
     }
 }
